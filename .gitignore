@@ -53,3 +53,4 @@ data/community.json
 *.pdf
 *.hwp
 *.xlsx
+!public/claim-forms/*.pdf
