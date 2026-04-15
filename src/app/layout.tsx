@@ -11,9 +11,23 @@ const CommandPalette = dynamic(
 );
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://woosu-cert.vercel.app"),
   title: "우수인증설계사 — 보험 실무 워크스페이스",
   description:
     "보험사 접속·청구 양식·계산기·교육을 한 화면에서. 우수인증설계사 워크스페이스.",
+  openGraph: {
+    type: "website",
+    locale: "ko_KR",
+    siteName: "우수인증설계사 워크스페이스",
+    title: "우수인증설계사 — 보험 실무 워크스페이스",
+    description:
+      "보험사 접속·청구 양식·계산기·교육을 한 화면에서. 현장에서 바로 쓰는 실무 도구.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "우수인증설계사 — 보험 실무 워크스페이스",
+    description: "보험사 접속·청구 양식·계산기·교육을 한 화면에서.",
+  },
 };
 
 export const viewport: Viewport = {
