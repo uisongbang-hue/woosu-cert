@@ -3,6 +3,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import dynamic from "next/dynamic";
 import { SiteHeader } from "@/components/site-header";
+import { SiteFooter } from "@/components/site-footer";
 import { MobileTabBar } from "@/components/mobile-tabbar";
 
 const CommandPalette = dynamic(
@@ -48,6 +49,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
           <SiteHeader />
           <main className="container pb-24 pt-6 md:pb-12">{children}</main>
+          <SiteFooter />
           <MobileTabBar />
           <CommandPalette />
         </ThemeProvider>
