@@ -1305,57 +1305,57 @@
     "insurer_slug": "samsung-fire",
     "kind": "claim_form",
     "value": "",
-    "url": "https://www.samsungfire.com/download/claim/claim_new.pdf",
-    "note": "청구서 PDF 직접 다운로드"
+    "url": "/claim-forms/samsung-fire.pdf",
+    "note": "청구서 PDF (로컬)"
   },
   {
     "insurer_slug": "meritz",
     "kind": "claim_form",
     "value": "",
-    "url": "https://www.meritzfire.com/compensation.do",
-    "note": "보상·보험금청구"
+    "url": "/claim-forms/meritz.pdf",
+    "note": "청구서 PDF (로컬)"
   },
   {
     "insurer_slug": "db",
     "kind": "claim_form",
     "value": "",
-    "url": "https://www.idbins.com/xici/lib/download/ba31.pdf",
-    "note": "청구서 PDF 직접 다운로드"
+    "url": "/claim-forms/db.pdf",
+    "note": "청구서 PDF (로컬)"
   },
   {
     "insurer_slug": "kb",
     "kind": "claim_form",
     "value": "",
-    "url": "https://www.kbinsure.co.kr/CG205010001.ec",
-    "note": "보험금청구안내"
+    "url": "/claim-forms/kb.pdf",
+    "note": "청구서 PDF (로컬)"
   },
   {
     "insurer_slug": "hyundai",
     "kind": "claim_form",
     "value": "",
-    "url": "https://www.hi.co.kr/data/CL/amends01.pdf",
-    "note": "청구서 PDF 직접 다운로드"
+    "url": "/claim-forms/hyundai.pdf",
+    "note": "청구서 PDF (로컬)"
   },
   {
     "insurer_slug": "hanwha-son",
     "kind": "claim_form",
     "value": "",
-    "url": "https://www.hwgeneralins.com/upload/download/customer/insurance.pdf",
-    "note": "청구서 PDF 직접 다운로드"
+    "url": "/claim-forms/hanwha-son.pdf",
+    "note": "청구서 PDF (로컬)"
   },
   {
     "insurer_slug": "lotte",
     "kind": "claim_form",
     "value": "",
-    "url": "https://www.lotteins.co.kr/web/C/D/C/cdc_claim_0502.jsp",
-    "note": "필요서류 접수처"
+    "url": "/claim-forms/lotte.pdf",
+    "note": "청구서 PDF (로컬)"
   },
   {
     "insurer_slug": "heungkuk-son",
     "kind": "claim_form",
     "value": "",
-    "url": "https://www.heungkukfire.co.kr/FRW/helpdesk/docInfoTemplate.do",
-    "note": "필요서류·양식"
+    "url": "/claim-forms/heungkuk-son.pdf",
+    "note": "청구서 PDF (로컬)"
   },
   {
     "insurer_slug": "hana-son",
@@ -1368,8 +1368,8 @@
     "insurer_slug": "nh-son",
     "kind": "claim_form",
     "value": "",
-    "url": "https://www.nhfire.co.kr/file/service/%EB%B3%B4%ED%97%98%EA%B8%88%EC%B2%AD%EA%B5%AC%EC%84%9C_V12.pdf",
-    "note": "청구서 PDF 직접 다운로드"
+    "url": "/claim-forms/nh-son.pdf",
+    "note": "청구서 PDF (로컬)"
   },
   {
     "insurer_slug": "lina",
@@ -1382,28 +1382,133 @@
     "insurer_slug": "samsung-life",
     "kind": "claim_form",
     "value": "",
-    "url": "https://www.samsunglife.com/dcms/upload/2025/03/07/%EB%B3%B4%ED%97%98%EA%B8%88%EC%B2%AD%EA%B5%AC%EC%84%9C(%EA%B0%9C%EC%9D%B8)_20250307.pdf",
-    "note": "청구서 PDF 직접 다운로드"
+    "url": "/claim-forms/samsung-life.pdf",
+    "note": "청구서 PDF (로컬)"
   },
   {
     "insurer_slug": "hanwha-life",
     "kind": "claim_form",
     "value": "",
-    "url": "https://www.hanwhalife.com/static/main/myPage/insurance/accident/document/MY_INAPADC_T70000.jsp",
-    "note": "신청서류 안내"
+    "url": "/claim-forms/hanwha-life.pdf",
+    "note": "청구서 PDF (로컬)"
   },
   {
     "insurer_slug": "kyobo",
     "kind": "claim_form",
     "value": "",
-    "url": "https://www.kyobo.com/dgt/web/customer/support/need-papers/list",
-    "note": "필요서류 안내"
+    "url": "/claim-forms/kyobo.pdf",
+    "note": "청구서 PDF (로컬)"
   },
   {
     "insurer_slug": "shinhan",
     "kind": "claim_form",
     "value": "",
-    "url": "https://cyber.shinhanlife.co.kr/print/doc_down_03.pdf",
-    "note": "청구서 PDF 직접 다운로드"
+    "url": "/claim-forms/shinhan.pdf",
+    "note": "청구서 PDF (로컬)"
+  },
+  {
+    "insurer_slug": "abl",
+    "kind": "claim_form",
+    "value": "",
+    "url": "/claim-forms/abl.pdf",
+    "note": "청구서 PDF (로컬)"
+  },
+  {
+    "insurer_slug": "aia",
+    "kind": "claim_form",
+    "value": "",
+    "url": "/claim-forms/aia.pdf",
+    "note": "청구서 PDF (로컬)"
+  },
+  {
+    "insurer_slug": "aig",
+    "kind": "claim_form",
+    "value": "",
+    "url": "/claim-forms/aig.pdf",
+    "note": "청구서 PDF (로컬)"
+  },
+  {
+    "insurer_slug": "dongyang",
+    "kind": "claim_form",
+    "value": "",
+    "url": "/claim-forms/dongyang.pdf",
+    "note": "청구서 PDF (로컬)"
+  },
+  {
+    "insurer_slug": "heungkuk-life",
+    "kind": "claim_form",
+    "value": "",
+    "url": "/claim-forms/heungkuk-life.pdf",
+    "note": "청구서 PDF (로컬)"
+  },
+  {
+    "insurer_slug": "kdb",
+    "kind": "claim_form",
+    "value": "",
+    "url": "/claim-forms/kdb.pdf",
+    "note": "청구서 PDF (로컬)"
+  },
+  {
+    "insurer_slug": "lina-life",
+    "kind": "claim_form",
+    "value": "",
+    "url": "/claim-forms/lina-life.pdf",
+    "note": "청구서 PDF (로컬)"
+  },
+  {
+    "insurer_slug": "mg",
+    "kind": "claim_form",
+    "value": "",
+    "url": "/claim-forms/mg.pdf",
+    "note": "청구서 PDF (로컬)"
+  },
+  {
+    "insurer_slug": "miraeasset",
+    "kind": "claim_form",
+    "value": "",
+    "url": "/claim-forms/miraeasset.pdf",
+    "note": "청구서 PDF (로컬)"
+  },
+  {
+    "insurer_slug": "nh-life",
+    "kind": "claim_form",
+    "value": "",
+    "url": "/claim-forms/nh-life.pdf",
+    "note": "청구서 PDF (로컬)"
+  },
+  {
+    "insurer_slug": "post",
+    "kind": "claim_form",
+    "value": "",
+    "url": "/claim-forms/post.pdf",
+    "note": "청구서 PDF (로컬)"
+  },
+  {
+    "insurer_slug": "pubon",
+    "kind": "claim_form",
+    "value": "",
+    "url": "/claim-forms/pubon.pdf",
+    "note": "청구서 PDF (로컬)"
+  },
+  {
+    "insurer_slug": "suhyup",
+    "kind": "claim_form",
+    "value": "",
+    "url": "/claim-forms/suhyup.pdf",
+    "note": "청구서 PDF (로컬)"
+  },
+  {
+    "insurer_slug": "hyundai",
+    "kind": "claim_form_pet",
+    "value": "",
+    "url": "/claim-forms/hyundai-pet.pdf",
+    "note": "펫보험 청구서 PDF"
+  },
+  {
+    "insurer_slug": "samsung-fire",
+    "kind": "claim_form_pet",
+    "value": "",
+    "url": "/claim-forms/samsung-fire-pet.pdf",
+    "note": "펫보험 청구서 PDF"
   }
 ]
