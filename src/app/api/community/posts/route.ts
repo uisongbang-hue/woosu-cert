@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { revalidatePath } from "next/cache";
 import { createPost, listPosts } from "@/lib/community";
 
 export const dynamic = "force-dynamic";
@@ -25,5 +26,6 @@ export async function POST(req: NextRequest) {
     ip: getIp(req),
   });
   if (!post) return NextResponse.json({ error: "invalid" }, { status: 400 });
+  revalidatePath("/community");
   return NextResponse.json(post);
 }

@@ -28,6 +28,7 @@ export default function NewPostPage() {
       return;
     }
     const p = await r.json();
+    router.refresh();
     router.push(`/community/${p.id}`);
   };
 
