@@ -1,0 +1,89 @@
+{
+  "posts": [
+    {
+      "id": "8b3485d31f",
+      "nickname": "ㅇㅇ(0A26BB)",
+      "title": "ㅎㅇㅎㅇ",
+      "body": "ㅎㅇㅎㅇ",
+      "createdAt": 1776242440708,
+      "views": 4,
+      "ip": "0A26BB"
+    },
+    {
+      "id": "3028a7f2b0",
+      "nickname": "ㅇㅇ(F0EF8E)",
+      "title": "테스트 글",
+      "body": "커뮤니티 잘 되는지 확인용",
+      "createdAt": 1776242401892,
+      "views": 5,
+      "ip": "F0EF8E"
+    },
+    {
+      "id": "6f5ec5132a",
+      "nickname": "테스트",
+      "title": "테스트",
+      "body": "테스트",
+      "createdAt": 1776242388291,
+      "views": 9,
+      "ip": "0A26BB"
+    }
+  ],
+  "comments": [
+    {
+      "id": "7259c0f2",
+      "postId": "3028a7f2b0",
+      "nickname": "ㅇㅇ(F0EF8E)",
+      "body": "테스트 댓글",
+      "createdAt": 1776242402205,
+      "ip": "F0EF8E"
+    },
+    {
+      "id": "198bf0b2",
+      "postId": "6f5ec5132a",
+      "nickname": "ㅋㅋ",
+      "body": "ㅎㅇㅎㅇ",
+      "createdAt": 1776242408057,
+      "ip": "0A26BB"
+    },
+    {
+      "id": "750b9ce2",
+      "postId": "6f5ec5132a",
+      "nickname": "ㅇㅇ(0A26BB)",
+      "body": "zcsdxvzcsvx",
+      "createdAt": 1776242409637,
+      "ip": "0A26BB"
+    },
+    {
+      "id": "1990792e",
+      "postId": "6f5ec5132a",
+      "nickname": "ㅋㅋ",
+      "body": "ㅎㅎㅎㅎㅎ",
+      "createdAt": 1776242412432,
+      "ip": "0A26BB"
+    },
+    {
+      "id": "909d04d6",
+      "postId": "6f5ec5132a",
+      "nickname": "ㅇㅇ(0A26BB)",
+      "body": "sfsf",
+      "createdAt": 1776242436952,
+      "ip": "0A26BB"
+    },
+    {
+      "id": "8a5f4ca2",
+      "postId": "6f5ec5132a",
+      "nickname": "ㅇㅇ(0A26BB)",
+      "body": "zzzz",
+      "createdAt": 1776242440248,
+      "ip": "0A26BB"
+    },
+    {
+      "id": "4948083a",
+      "postId": "6f5ec5132a",
+      "nickname": "ㅇㅇ(0A26BB)",
+      "body": "agvaf",
+      "createdAt": 1776242442361,
+      "ip": "0A26BB"
+    }
+  ]
+}

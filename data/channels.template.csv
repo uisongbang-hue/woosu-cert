@@ -1,0 +1,31 @@
+insurer_slug,kind,value,url,note
+# ── 사용법 ──────────────────────────────────────────────────────────
+# 1) 이 파일을 그대로 두고 사본으로 data/channels.csv 를 만들어 채운다.
+# 2) insurer_slug 는 data/seed.json > insurers[].slug 와 반드시 동일.
+#    (예: samsung-fire, db, kb, hyundai, meritz, kyobo, samsung-life ...)
+# 3) kind 는 아래 중 하나:
+#      browser      전산 브라우저 (URL)
+#      customer     고객센터 (전화)
+#      incall       인콜 모니터링 (전화)
+#      monitor      모니터링 전산 (URL)
+#      helpdesk     헬프데스크 (전화)
+#      fax_claim    보험금 청구팩스 (전화/팩스)
+#      terms        약관 확인 (URL)
+#      claim_form   청구서 양식 (URL/파일)
+#      caregiver    간병 관련 (URL/파일)
+# 4) value 는 전화번호(1588-0100) 또는 빈값.
+# 5) url  은 http(s)://... 또는 빈값.
+# 6) note 는 참고 메모(선택). 쉼표가 들어가면 "따옴표"로 감쌀 것.
+# 7) 저장 후: npx tsx scripts/import-channels.ts
+# ────────────────────────────────────────────────────────────────
+# ── 예시 (지워도 됨) ──
+samsung-fire,customer,1588-5114,,삼성화재 고객센터
+samsung-fire,fax_claim,02-2262-1241,,
+samsung-fire,browser,,https://www.samsungfire.com/,
+db,customer,1588-0100,,DB손해보험
+db,fax_claim,02-3786-2777,,
+kb,customer,1544-0114,,KB손해보험
+hyundai,customer,1588-5656,,현대해상
+meritz,customer,1566-7711,,메리츠화재
+kyobo,customer,1588-1001,,교보생명
+samsung-life,customer,1588-3114,,삼성생명

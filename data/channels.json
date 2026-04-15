@@ -1,0 +1,1409 @@
+[
+  {
+    "insurer_slug": "samsung-fire",
+    "kind": "browser",
+    "value": "",
+    "url": "https://erp.samsungfire.com",
+    "note": "설계사 전산"
+  },
+  {
+    "insurer_slug": "samsung-fire",
+    "kind": "customer",
+    "value": "1588-5114",
+    "url": "",
+    "note": ""
+  },
+  {
+    "insurer_slug": "samsung-fire",
+    "kind": "incall",
+    "value": "1566-0553",
+    "url": "",
+    "note": "인콜 모니터링"
+  },
+  {
+    "insurer_slug": "samsung-fire",
+    "kind": "helpdesk",
+    "value": "1899-5005",
+    "url": "",
+    "note": "전산 헬프데스크"
+  },
+  {
+    "insurer_slug": "samsung-fire",
+    "kind": "terms",
+    "value": "",
+    "url": "https://www.samsungfire.com/page/VH.REIF0011.do",
+    "note": "약관확인"
+  },
+  {
+    "insurer_slug": "meritz",
+    "kind": "browser",
+    "value": "",
+    "url": "http://sales.meritzfire.com",
+    "note": "설계사 전산"
+  },
+  {
+    "insurer_slug": "meritz",
+    "kind": "customer",
+    "value": "1566-7711",
+    "url": "",
+    "note": ""
+  },
+  {
+    "insurer_slug": "meritz",
+    "kind": "incall",
+    "value": "1577-7711",
+    "url": "",
+    "note": "인콜 모니터링"
+  },
+  {
+    "insurer_slug": "meritz",
+    "kind": "helpdesk",
+    "value": "02-3786-2777",
+    "url": "",
+    "note": "전산 헬프데스크"
+  },
+  {
+    "insurer_slug": "meritz",
+    "kind": "terms",
+    "value": "",
+    "url": "https://www.meritzfire.com/disclosure/product-announcement/product-list.do#!/",
+    "note": "약관확인"
+  },
+  {
+    "insurer_slug": "db",
+    "kind": "browser",
+    "value": "",
+    "url": "https://www.mdbins.com",
+    "note": "설계사 전산"
+  },
+  {
+    "insurer_slug": "db",
+    "kind": "customer",
+    "value": "1588-0100",
+    "url": "",
+    "note": ""
+  },
+  {
+    "insurer_slug": "db",
+    "kind": "incall",
+    "value": "1566-0757",
+    "url": "",
+    "note": "인콜 모니터링"
+  },
+  {
+    "insurer_slug": "db",
+    "kind": "helpdesk",
+    "value": "02-2262-1241",
+    "url": "",
+    "note": "전산 헬프데스크"
+  },
+  {
+    "insurer_slug": "db",
+    "kind": "terms",
+    "value": "",
+    "url": "https://www.idbins.com/FWMAIV1534.do",
+    "note": "약관확인"
+  },
+  {
+    "insurer_slug": "kb",
+    "kind": "browser",
+    "value": "",
+    "url": "https://nsales.kbinsure.co.kr/",
+    "note": "설계사 전산"
+  },
+  {
+    "insurer_slug": "kb",
+    "kind": "customer",
+    "value": "1544-0114",
+    "url": "",
+    "note": ""
+  },
+  {
+    "insurer_slug": "kb",
+    "kind": "incall",
+    "value": "1544-0019",
+    "url": "",
+    "note": "인콜 모니터링"
+  },
+  {
+    "insurer_slug": "kb",
+    "kind": "helpdesk",
+    "value": "1544-8119",
+    "url": "",
+    "note": "전산 헬프데스크"
+  },
+  {
+    "insurer_slug": "kb",
+    "kind": "terms",
+    "value": "",
+    "url": "https://www.kbinsure.co.kr/CG802030001.ec",
+    "note": "약관확인"
+  },
+  {
+    "insurer_slug": "hyundai",
+    "kind": "browser",
+    "value": "",
+    "url": "https://sp.hi.co.kr",
+    "note": "설계사 전산"
+  },
+  {
+    "insurer_slug": "hyundai",
+    "kind": "customer",
+    "value": "1588-5656",
+    "url": "",
+    "note": ""
+  },
+  {
+    "insurer_slug": "hyundai",
+    "kind": "incall",
+    "value": "1577-3223",
+    "url": "",
+    "note": "인콜 모니터링"
+  },
+  {
+    "insurer_slug": "hyundai",
+    "kind": "helpdesk",
+    "value": "02-2628-4567",
+    "url": "",
+    "note": "전산 헬프데스크"
+  },
+  {
+    "insurer_slug": "hyundai",
+    "kind": "terms",
+    "value": "",
+    "url": "https://www.hi.co.kr/serviceAction.do?view=bin/PA/03/HHPA03010M#none",
+    "note": "약관확인"
+  },
+  {
+    "insurer_slug": "hanwha-son",
+    "kind": "browser",
+    "value": "",
+    "url": "http://portal.hwgeneralins.com",
+    "note": "설계사 전산"
+  },
+  {
+    "insurer_slug": "hanwha-son",
+    "kind": "customer",
+    "value": "1566-8000",
+    "url": "",
+    "note": ""
+  },
+  {
+    "insurer_slug": "hanwha-son",
+    "kind": "incall",
+    "value": "1670-1882",
+    "url": "",
+    "note": "인콜 모니터링"
+  },
+  {
+    "insurer_slug": "hanwha-son",
+    "kind": "helpdesk",
+    "value": "02-316-0111",
+    "url": "",
+    "note": "전산 헬프데스크"
+  },
+  {
+    "insurer_slug": "hanwha-son",
+    "kind": "terms",
+    "value": "",
+    "url": "https://www.hwgeneralins.com/notice/ir/product-ing01.do",
+    "note": "약관확인"
+  },
+  {
+    "insurer_slug": "lotte",
+    "kind": "browser",
+    "value": "",
+    "url": "http://lottero.lotteins.co.kr",
+    "note": "설계사 전산"
+  },
+  {
+    "insurer_slug": "lotte",
+    "kind": "customer",
+    "value": "1588-3344",
+    "url": "",
+    "note": ""
+  },
+  {
+    "insurer_slug": "lotte",
+    "kind": "incall",
+    "value": "1600-5182",
+    "url": "",
+    "note": "인콜 모니터링"
+  },
+  {
+    "insurer_slug": "lotte",
+    "kind": "helpdesk",
+    "value": "1599-8260",
+    "url": "",
+    "note": "전산 헬프데스크"
+  },
+  {
+    "insurer_slug": "lotte",
+    "kind": "terms",
+    "value": "",
+    "url": "https://www.lotteins.co.kr/web/C/D/H/cdh190.jsp",
+    "note": "약관확인"
+  },
+  {
+    "insurer_slug": "heungkuk-son",
+    "kind": "browser",
+    "value": "",
+    "url": "https://sales.heungkukfire.co.kr/",
+    "note": "설계사 전산"
+  },
+  {
+    "insurer_slug": "heungkuk-son",
+    "kind": "customer",
+    "value": "1688-1688",
+    "url": "",
+    "note": ""
+  },
+  {
+    "insurer_slug": "heungkuk-son",
+    "kind": "incall",
+    "value": "1688-6997",
+    "url": "",
+    "note": "인콜 모니터링"
+  },
+  {
+    "insurer_slug": "heungkuk-son",
+    "kind": "helpdesk",
+    "value": "031-786-8088",
+    "url": "",
+    "note": "전산 헬프데스크"
+  },
+  {
+    "insurer_slug": "heungkuk-son",
+    "kind": "terms",
+    "value": "",
+    "url": "https://www.heungkukfire.co.kr/FRW/announce/insGoodsGongsiSale.do",
+    "note": "약관확인"
+  },
+  {
+    "insurer_slug": "hana-son",
+    "kind": "browser",
+    "value": "",
+    "url": "https://sfa.saleshana.com/index.html",
+    "note": "설계사 전산"
+  },
+  {
+    "insurer_slug": "hana-son",
+    "kind": "customer",
+    "value": "1566-3000",
+    "url": "",
+    "note": ""
+  },
+  {
+    "insurer_slug": "hana-son",
+    "kind": "incall",
+    "value": "02-6299-6821",
+    "url": "",
+    "note": "인콜 모니터링"
+  },
+  {
+    "insurer_slug": "hana-son",
+    "kind": "helpdesk",
+    "value": "02-6670-8110",
+    "url": "",
+    "note": "전산 헬프데스크"
+  },
+  {
+    "insurer_slug": "hana-son",
+    "kind": "terms",
+    "value": "",
+    "url": "https://www.hanainsure.co.kr/w/disclosure/product/saleProduct",
+    "note": "약관확인"
+  },
+  {
+    "insurer_slug": "nh-son",
+    "kind": "browser",
+    "value": "",
+    "url": "https://ss.nhfire.co.kr/",
+    "note": "설계사 전산"
+  },
+  {
+    "insurer_slug": "nh-son",
+    "kind": "customer",
+    "value": "1644-9000",
+    "url": "",
+    "note": ""
+  },
+  {
+    "insurer_slug": "nh-son",
+    "kind": "incall",
+    "value": "1644-9600",
+    "url": "",
+    "note": "인콜 모니터링"
+  },
+  {
+    "insurer_slug": "nh-son",
+    "kind": "helpdesk",
+    "value": "1644-0090",
+    "url": "",
+    "note": "전산 헬프데스크"
+  },
+  {
+    "insurer_slug": "nh-son",
+    "kind": "terms",
+    "value": "",
+    "url": "https://www.nhfire.co.kr/announce/productAnnounce/retrieveInsuranceProductsAnnounce.nhfire",
+    "note": "약관확인"
+  },
+  {
+    "insurer_slug": "lina",
+    "kind": "browser",
+    "value": "",
+    "url": "https://ga.linagi.com/",
+    "note": "설계사 전산"
+  },
+  {
+    "insurer_slug": "lina",
+    "kind": "customer",
+    "value": "1566-5800",
+    "url": "",
+    "note": ""
+  },
+  {
+    "insurer_slug": "lina",
+    "kind": "incall",
+    "value": "1566-5800",
+    "url": "",
+    "note": "인콜 모니터링"
+  },
+  {
+    "insurer_slug": "lina",
+    "kind": "helpdesk",
+    "value": "02-6922-5100",
+    "url": "",
+    "note": "전산 헬프데스크"
+  },
+  {
+    "insurer_slug": "lina",
+    "kind": "terms",
+    "value": "",
+    "url": "https://www.chubb.com/kr-kr/disclosure/product.html",
+    "note": "약관확인"
+  },
+  {
+    "insurer_slug": "aig",
+    "kind": "browser",
+    "value": "",
+    "url": "https://sso.aig.co.kr/gaLogin/gaLogin.jsp",
+    "note": "설계사 전산"
+  },
+  {
+    "insurer_slug": "aig",
+    "kind": "customer",
+    "value": "1544-2792",
+    "url": "",
+    "note": ""
+  },
+  {
+    "insurer_slug": "aig",
+    "kind": "incall",
+    "value": "1544-2792",
+    "url": "",
+    "note": "인콜 모니터링"
+  },
+  {
+    "insurer_slug": "aig",
+    "kind": "helpdesk",
+    "value": "02-2260-6855",
+    "url": "",
+    "note": "전산 헬프데스크"
+  },
+  {
+    "insurer_slug": "aig",
+    "kind": "terms",
+    "value": "",
+    "url": "https://www.aig.co.kr/wo/dpwot001.html?menuId=MS702",
+    "note": "약관확인"
+  },
+  {
+    "insurer_slug": "axa",
+    "kind": "customer",
+    "value": "1566-1566",
+    "url": "",
+    "note": ""
+  },
+  {
+    "insurer_slug": "yebyeol",
+    "kind": "browser",
+    "value": "",
+    "url": "https://mganet.mggeneralins.com",
+    "note": "설계사 전산"
+  },
+  {
+    "insurer_slug": "yebyeol",
+    "kind": "customer",
+    "value": "1588-5959",
+    "url": "",
+    "note": ""
+  },
+  {
+    "insurer_slug": "yebyeol",
+    "kind": "incall",
+    "value": "1577-3777",
+    "url": "",
+    "note": "인콜 모니터링"
+  },
+  {
+    "insurer_slug": "yebyeol",
+    "kind": "helpdesk",
+    "value": "02-3788-2261",
+    "url": "",
+    "note": "전산 헬프데스크"
+  },
+  {
+    "insurer_slug": "yebyeol",
+    "kind": "terms",
+    "value": "",
+    "url": "https://www.mggeneralins.com/PB031210DM.scp?menuId=MN0803006",
+    "note": "약관확인"
+  },
+  {
+    "insurer_slug": "samsung-life",
+    "kind": "browser",
+    "value": "",
+    "url": "https://connectplus.samsunglife.com:10443/gasso/login",
+    "note": "설계사 전산"
+  },
+  {
+    "insurer_slug": "samsung-life",
+    "kind": "customer",
+    "value": "1588-3114",
+    "url": "",
+    "note": ""
+  },
+  {
+    "insurer_slug": "samsung-life",
+    "kind": "incall",
+    "value": "1588-3115",
+    "url": "",
+    "note": "인콜 모니터링"
+  },
+  {
+    "insurer_slug": "samsung-life",
+    "kind": "helpdesk",
+    "value": "02-311-4500",
+    "url": "",
+    "note": "전산 헬프데스크"
+  },
+  {
+    "insurer_slug": "samsung-life",
+    "kind": "terms",
+    "value": "",
+    "url": "https://www.samsunglife.com/individual/products/disclosure/sales/PDO-PRPRI010110M",
+    "note": "약관확인"
+  },
+  {
+    "insurer_slug": "hanwha-life",
+    "kind": "browser",
+    "value": "",
+    "url": "https://hmp.hanwhalife.com/online/ga",
+    "note": "설계사 전산"
+  },
+  {
+    "insurer_slug": "hanwha-life",
+    "kind": "customer",
+    "value": "1588-6363",
+    "url": "",
+    "note": ""
+  },
+  {
+    "insurer_slug": "hanwha-life",
+    "kind": "incall",
+    "value": "1800-6633",
+    "url": "",
+    "note": "인콜 모니터링"
+  },
+  {
+    "insurer_slug": "hanwha-life",
+    "kind": "helpdesk",
+    "value": "1522-6379",
+    "url": "",
+    "note": "전산 헬프데스크"
+  },
+  {
+    "insurer_slug": "hanwha-life",
+    "kind": "terms",
+    "value": "",
+    "url": "https://hmp.hanwhalife.com/online/solutions/websquare/websquare.html?w2xPath=/online/ui/uv/gmn/uvgmn505mvw.xml",
+    "note": "약관확인"
+  },
+  {
+    "insurer_slug": "kyobo",
+    "kind": "browser",
+    "value": "",
+    "url": "https://ga.kyobo.com",
+    "note": "설계사 전산"
+  },
+  {
+    "insurer_slug": "kyobo",
+    "kind": "customer",
+    "value": "1588-1001",
+    "url": "",
+    "note": ""
+  },
+  {
+    "insurer_slug": "kyobo",
+    "kind": "incall",
+    "value": "1588-1636",
+    "url": "",
+    "note": "인콜 모니터링"
+  },
+  {
+    "insurer_slug": "kyobo",
+    "kind": "helpdesk",
+    "value": "02-721-3130",
+    "url": "",
+    "note": "전산 헬프데스크"
+  },
+  {
+    "insurer_slug": "kyobo",
+    "kind": "terms",
+    "value": "",
+    "url": "https://www.kyobo.com/dgt/web/product-official/all-product/search",
+    "note": "약관확인"
+  },
+  {
+    "insurer_slug": "shinhan",
+    "kind": "browser",
+    "value": "",
+    "url": "https://ga.shinhanlife.co.kr",
+    "note": "설계사 전산"
+  },
+  {
+    "insurer_slug": "shinhan",
+    "kind": "customer",
+    "value": "1588-5580",
+    "url": "",
+    "note": ""
+  },
+  {
+    "insurer_slug": "shinhan",
+    "kind": "incall",
+    "value": "1522-2285",
+    "url": "",
+    "note": "인콜 모니터링"
+  },
+  {
+    "insurer_slug": "shinhan",
+    "kind": "helpdesk",
+    "value": "02-3455-4119",
+    "url": "",
+    "note": "전산 헬프데스크"
+  },
+  {
+    "insurer_slug": "shinhan",
+    "kind": "terms",
+    "value": "",
+    "url": "https://www.shinhanlife.co.kr/hp/cdhi0010.do",
+    "note": "약관확인"
+  },
+  {
+    "insurer_slug": "kb-life",
+    "kind": "browser",
+    "value": "",
+    "url": "https://sfa.kblife.co.kr/",
+    "note": "설계사 전산"
+  },
+  {
+    "insurer_slug": "kb-life",
+    "kind": "customer",
+    "value": "1588-3374",
+    "url": "",
+    "note": ""
+  },
+  {
+    "insurer_slug": "kb-life",
+    "kind": "incall",
+    "value": "1566-2730",
+    "url": "",
+    "note": "인콜 모니터링"
+  },
+  {
+    "insurer_slug": "kb-life",
+    "kind": "helpdesk",
+    "value": "1899-3899",
+    "url": "",
+    "note": "전산 헬프데스크"
+  },
+  {
+    "insurer_slug": "kb-life",
+    "kind": "terms",
+    "value": "",
+    "url": "https://www.kblife.co.kr/?/=true&tab=currently-selling",
+    "note": "약관확인"
+  },
+  {
+    "insurer_slug": "nh-life",
+    "kind": "browser",
+    "value": "",
+    "url": "https://sfa.nhlife.co.kr:8443/",
+    "note": "설계사 전산"
+  },
+  {
+    "insurer_slug": "nh-life",
+    "kind": "customer",
+    "value": "1544-4000",
+    "url": "",
+    "note": ""
+  },
+  {
+    "insurer_slug": "nh-life",
+    "kind": "incall",
+    "value": "1544-4422",
+    "url": "",
+    "note": "인콜 모니터링"
+  },
+  {
+    "insurer_slug": "nh-life",
+    "kind": "helpdesk",
+    "value": "02-3786-8800",
+    "url": "",
+    "note": "전산 헬프데스크"
+  },
+  {
+    "insurer_slug": "nh-life",
+    "kind": "terms",
+    "value": "",
+    "url": "https://www.nhlife.co.kr/ho/on/HOON0004M00.nhl",
+    "note": "약관확인"
+  },
+  {
+    "insurer_slug": "dongyang",
+    "kind": "browser",
+    "value": "",
+    "url": "http://1004.myangel.co.kr",
+    "note": "설계사 전산"
+  },
+  {
+    "insurer_slug": "dongyang",
+    "kind": "customer",
+    "value": "1577-1004",
+    "url": "",
+    "note": ""
+  },
+  {
+    "insurer_slug": "dongyang",
+    "kind": "incall",
+    "value": "080-899-1004",
+    "url": "",
+    "note": "인콜 모니터링"
+  },
+  {
+    "insurer_slug": "dongyang",
+    "kind": "helpdesk",
+    "value": "02-728-9900",
+    "url": "",
+    "note": "전산 헬프데스크"
+  },
+  {
+    "insurer_slug": "dongyang",
+    "kind": "terms",
+    "value": "",
+    "url": "https://www.myangel.co.kr/paging/WE_AC_WEPAAP020100L",
+    "note": "약관확인"
+  },
+  {
+    "insurer_slug": "miraeasset",
+    "kind": "browser",
+    "value": "",
+    "url": "http://www.loveageplan.com",
+    "note": "설계사 전산"
+  },
+  {
+    "insurer_slug": "miraeasset",
+    "kind": "customer",
+    "value": "1588-0220",
+    "url": "",
+    "note": ""
+  },
+  {
+    "insurer_slug": "miraeasset",
+    "kind": "incall",
+    "value": "1588-0220",
+    "url": "",
+    "note": "인콜 모니터링"
+  },
+  {
+    "insurer_slug": "miraeasset",
+    "kind": "helpdesk",
+    "value": "02-3271-5108",
+    "url": "",
+    "note": "전산 헬프데스크"
+  },
+  {
+    "insurer_slug": "miraeasset",
+    "kind": "terms",
+    "value": "",
+    "url": "https://wga.loveageplan.com",
+    "note": "약관확인"
+  },
+  {
+    "insurer_slug": "kdb",
+    "kind": "browser",
+    "value": "",
+    "url": "http://kss.kdblife.co.kr",
+    "note": "설계사 전산"
+  },
+  {
+    "insurer_slug": "kdb",
+    "kind": "customer",
+    "value": "1588-4040",
+    "url": "",
+    "note": ""
+  },
+  {
+    "insurer_slug": "kdb",
+    "kind": "incall",
+    "value": "1588-4040",
+    "url": "",
+    "note": "인콜 모니터링"
+  },
+  {
+    "insurer_slug": "kdb",
+    "kind": "helpdesk",
+    "value": "02-6303-2771",
+    "url": "",
+    "note": "전산 헬프데스크"
+  },
+  {
+    "insurer_slug": "kdb",
+    "kind": "terms",
+    "value": "",
+    "url": "https://www.kdblife.co.kr/ajax.do?scrId=HDLMA002M02P",
+    "note": "약관확인"
+  },
+  {
+    "insurer_slug": "im-life",
+    "kind": "browser",
+    "value": "",
+    "url": "https://fgs.dgbfnlife.com:8443",
+    "note": "설계사 전산"
+  },
+  {
+    "insurer_slug": "im-life",
+    "kind": "customer",
+    "value": "1588-4770",
+    "url": "",
+    "note": ""
+  },
+  {
+    "insurer_slug": "im-life",
+    "kind": "incall",
+    "value": "1588-4770",
+    "url": "",
+    "note": "인콜 모니터링"
+  },
+  {
+    "insurer_slug": "im-life",
+    "kind": "helpdesk",
+    "value": "02-2087-9594",
+    "url": "",
+    "note": "전산 헬프데스크"
+  },
+  {
+    "insurer_slug": "im-life",
+    "kind": "terms",
+    "value": "",
+    "url": "https://www.dgbfnlife.com/BA/BA_A020.do",
+    "note": "약관확인"
+  },
+  {
+    "insurer_slug": "abl",
+    "kind": "browser",
+    "value": "",
+    "url": "http://ga.abllife.co.kr",
+    "note": "설계사 전산"
+  },
+  {
+    "insurer_slug": "abl",
+    "kind": "customer",
+    "value": "1588-6500",
+    "url": "",
+    "note": ""
+  },
+  {
+    "insurer_slug": "abl",
+    "kind": "incall",
+    "value": "1566-1002",
+    "url": "",
+    "note": "인콜 모니터링"
+  },
+  {
+    "insurer_slug": "abl",
+    "kind": "helpdesk",
+    "value": "02-3787-8583",
+    "url": "",
+    "note": "전산 헬프데스크"
+  },
+  {
+    "insurer_slug": "abl",
+    "kind": "terms",
+    "value": "",
+    "url": "https://www.abllife.co.kr/st/pban/prdtPban/whlPrdt/whlPrdt1/whlPrdt11?page=index",
+    "note": "약관확인"
+  },
+  {
+    "insurer_slug": "heungkuk-life",
+    "kind": "browser",
+    "value": "",
+    "url": "https://sales.heungkuklife.co.kr/",
+    "note": "설계사 전산"
+  },
+  {
+    "insurer_slug": "heungkuk-life",
+    "kind": "customer",
+    "value": "1588-2288",
+    "url": "",
+    "note": ""
+  },
+  {
+    "insurer_slug": "heungkuk-life",
+    "kind": "incall",
+    "value": "1877-7006",
+    "url": "",
+    "note": "인콜 모니터링"
+  },
+  {
+    "insurer_slug": "heungkuk-life",
+    "kind": "helpdesk",
+    "value": "031-786-8088",
+    "url": "",
+    "note": "전산 헬프데스크"
+  },
+  {
+    "insurer_slug": "heungkuk-life",
+    "kind": "terms",
+    "value": "",
+    "url": "https://www.heungkuklife.co.kr/front/public/saleProduct.do?searchFlgSale=Y",
+    "note": "약관확인"
+  },
+  {
+    "insurer_slug": "hana-life",
+    "kind": "browser",
+    "value": "",
+    "url": "https://ga.hanalife.co.kr",
+    "note": "설계사 전산"
+  },
+  {
+    "insurer_slug": "hana-life",
+    "kind": "customer",
+    "value": "1577-1112",
+    "url": "",
+    "note": ""
+  },
+  {
+    "insurer_slug": "hana-life",
+    "kind": "incall",
+    "value": "1577-1112",
+    "url": "",
+    "note": "인콜 모니터링"
+  },
+  {
+    "insurer_slug": "hana-life",
+    "kind": "terms",
+    "value": "",
+    "url": "https://hanalife.co.kr/anm/product/allProduct.do?status=on",
+    "note": "약관확인"
+  },
+  {
+    "insurer_slug": "db-life",
+    "kind": "browser",
+    "value": "",
+    "url": "http://etopia.idblife.com",
+    "note": "설계사 전산"
+  },
+  {
+    "insurer_slug": "db-life",
+    "kind": "customer",
+    "value": "1588-3131",
+    "url": "",
+    "note": ""
+  },
+  {
+    "insurer_slug": "db-life",
+    "kind": "incall",
+    "value": "02-6470-7663",
+    "url": "",
+    "note": "인콜 모니터링"
+  },
+  {
+    "insurer_slug": "db-life",
+    "kind": "helpdesk",
+    "value": "02-2119-5151",
+    "url": "",
+    "note": "전산 헬프데스크"
+  },
+  {
+    "insurer_slug": "db-life",
+    "kind": "terms",
+    "value": "",
+    "url": "https://www.idblife.com/notice/product/sale",
+    "note": "약관확인"
+  },
+  {
+    "insurer_slug": "lina-life",
+    "kind": "browser",
+    "value": "",
+    "url": "https://ga.lina.co.kr",
+    "note": "설계사 전산"
+  },
+  {
+    "insurer_slug": "lina-life",
+    "kind": "customer",
+    "value": "1588-0058",
+    "url": "",
+    "note": ""
+  },
+  {
+    "insurer_slug": "lina-life",
+    "kind": "incall",
+    "value": "1588-2442",
+    "url": "",
+    "note": "인콜 모니터링"
+  },
+  {
+    "insurer_slug": "lina-life",
+    "kind": "helpdesk",
+    "value": "02-3781-2006",
+    "url": "",
+    "note": "전산 헬프데스크"
+  },
+  {
+    "insurer_slug": "lina-life",
+    "kind": "terms",
+    "value": "",
+    "url": "https://ga.lina.co.kr/html/gap/GA/GAZ911M0.html",
+    "note": "약관확인"
+  },
+  {
+    "insurer_slug": "ibk",
+    "kind": "browser",
+    "value": "",
+    "url": "https://sf.ibki.co.kr/",
+    "note": "설계사 전산"
+  },
+  {
+    "insurer_slug": "ibk",
+    "kind": "customer",
+    "value": "1577-4117",
+    "url": "",
+    "note": ""
+  },
+  {
+    "insurer_slug": "ibk",
+    "kind": "incall",
+    "value": "02-2270-1661",
+    "url": "",
+    "note": "인콜 모니터링"
+  },
+  {
+    "insurer_slug": "ibk",
+    "kind": "helpdesk",
+    "value": "02-2270-1692",
+    "url": "",
+    "note": "전산 헬프데스크"
+  },
+  {
+    "insurer_slug": "ibk",
+    "kind": "terms",
+    "value": "",
+    "url": "https://www.ibki.co.kr/process/HP_PBANO_PDT_SP_INDV",
+    "note": "약관확인"
+  },
+  {
+    "insurer_slug": "met",
+    "kind": "browser",
+    "value": "",
+    "url": "http://metplus.metlife.co.kr",
+    "note": "설계사 전산"
+  },
+  {
+    "insurer_slug": "met",
+    "kind": "customer",
+    "value": "1588-9600",
+    "url": "",
+    "note": ""
+  },
+  {
+    "insurer_slug": "met",
+    "kind": "incall",
+    "value": "1588-9609",
+    "url": "",
+    "note": "인콜 모니터링"
+  },
+  {
+    "insurer_slug": "met",
+    "kind": "helpdesk",
+    "value": "1899-0751",
+    "url": "",
+    "note": "전산 헬프데스크"
+  },
+  {
+    "insurer_slug": "met",
+    "kind": "terms",
+    "value": "",
+    "url": "https://brand.metlife.co.kr/pn/paReal/insuProductDisclMain.do",
+    "note": "약관확인"
+  },
+  {
+    "insurer_slug": "chubb-life",
+    "kind": "browser",
+    "value": "",
+    "url": "http://esmart.chubblife.co.kr",
+    "note": "설계사 전산"
+  },
+  {
+    "insurer_slug": "chubb-life",
+    "kind": "customer",
+    "value": "1599-4600",
+    "url": "",
+    "note": ""
+  },
+  {
+    "insurer_slug": "chubb-life",
+    "kind": "incall",
+    "value": "1599-4600",
+    "url": "",
+    "note": "인콜 모니터링"
+  },
+  {
+    "insurer_slug": "chubb-life",
+    "kind": "helpdesk",
+    "value": "1599-4646",
+    "url": "",
+    "note": "전산 헬프데스크"
+  },
+  {
+    "insurer_slug": "chubb-life",
+    "kind": "terms",
+    "value": "",
+    "url": "https://www.chubblife.co.kr/front/official/sale/list.do",
+    "note": "약관확인"
+  },
+  {
+    "insurer_slug": "pubon",
+    "kind": "browser",
+    "value": "",
+    "url": "https://ez.fubonhyundai.com/",
+    "note": "설계사 전산"
+  },
+  {
+    "insurer_slug": "pubon",
+    "kind": "customer",
+    "value": "1577-3311",
+    "url": "",
+    "note": ""
+  },
+  {
+    "insurer_slug": "pubon",
+    "kind": "incall",
+    "value": "080-860-1212",
+    "url": "",
+    "note": "인콜 모니터링"
+  },
+  {
+    "insurer_slug": "pubon",
+    "kind": "terms",
+    "value": "",
+    "url": "https://www.fubonhyundai.com/#CUSI150102010101",
+    "note": "약관확인"
+  },
+  {
+    "insurer_slug": "cardif",
+    "kind": "browser",
+    "value": "",
+    "url": "http://ga.cardif.co.kr",
+    "note": "설계사 전산"
+  },
+  {
+    "insurer_slug": "cardif",
+    "kind": "customer",
+    "value": "1688-1118",
+    "url": "",
+    "note": ""
+  },
+  {
+    "insurer_slug": "cardif",
+    "kind": "incall",
+    "value": "1688-1118",
+    "url": "",
+    "note": "인콜 모니터링"
+  },
+  {
+    "insurer_slug": "cardif",
+    "kind": "helpdesk",
+    "value": "1577-3435",
+    "url": "",
+    "note": "전산 헬프데스크"
+  },
+  {
+    "insurer_slug": "cardif",
+    "kind": "terms",
+    "value": "",
+    "url": "https://www.cardif.co.kr/disclosure/papag101.do",
+    "note": "약관확인"
+  },
+  {
+    "insurer_slug": "aia",
+    "kind": "browser",
+    "value": "",
+    "url": "https://imap.aia.co.kr",
+    "note": "설계사 전산"
+  },
+  {
+    "insurer_slug": "aia",
+    "kind": "customer",
+    "value": "1588-9898",
+    "url": "",
+    "note": ""
+  },
+  {
+    "insurer_slug": "aia",
+    "kind": "incall",
+    "value": "1588-2513",
+    "url": "",
+    "note": "인콜 모니터링"
+  },
+  {
+    "insurer_slug": "aia",
+    "kind": "helpdesk",
+    "value": "1588-2937",
+    "url": "",
+    "note": "전산 헬프데스크"
+  },
+  {
+    "insurer_slug": "aia",
+    "kind": "terms",
+    "value": "",
+    "url": "https://www.aia.co.kr/ko/our-products.html",
+    "note": "약관확인"
+  },
+  {
+    "insurer_slug": "post",
+    "kind": "browser",
+    "value": "",
+    "url": "https://epostlife.go.kr/LNLNDM10DM.do",
+    "note": "설계사 전산"
+  },
+  {
+    "insurer_slug": "post",
+    "kind": "customer",
+    "value": "1599-0100",
+    "url": "",
+    "note": ""
+  },
+  {
+    "insurer_slug": "post",
+    "kind": "terms",
+    "value": "",
+    "url": "https://mall.epostbank.go.kr/IPPSKE0000.do",
+    "note": "약관확인"
+  },
+  {
+    "insurer_slug": "thek",
+    "kind": "browser",
+    "value": "",
+    "url": "https://www.ktcu.or.kr/MH/MH-P010M01.do",
+    "note": "설계사 전산"
+  },
+  {
+    "insurer_slug": "thek",
+    "kind": "customer",
+    "value": "1577-3993",
+    "url": "",
+    "note": ""
+  },
+  {
+    "insurer_slug": "thek",
+    "kind": "incall",
+    "value": "02-3278-9696",
+    "url": "",
+    "note": "인콜 모니터링"
+  },
+  {
+    "insurer_slug": "thek",
+    "kind": "terms",
+    "value": "",
+    "url": "https://www.ktcu.or.kr/IS/IS-P170M01.do",
+    "note": "약관확인"
+  },
+  {
+    "insurer_slug": "mg",
+    "kind": "browser",
+    "value": "",
+    "url": "https://insure.kfcc.co.kr/",
+    "note": "설계사 전산"
+  },
+  {
+    "insurer_slug": "mg",
+    "kind": "customer",
+    "value": "1599-9010",
+    "url": "",
+    "note": ""
+  },
+  {
+    "insurer_slug": "mg",
+    "kind": "incall",
+    "value": "02-3016-7674",
+    "url": "",
+    "note": "인콜 모니터링"
+  },
+  {
+    "insurer_slug": "mg",
+    "kind": "terms",
+    "value": "",
+    "url": "https://insu.kfcc.co.kr/ino/inoGuide.do",
+    "note": "약관확인"
+  },
+  {
+    "insurer_slug": "suhyup",
+    "kind": "browser",
+    "value": "",
+    "url": "https://www.suhyup-bank.com/",
+    "note": "설계사 전산"
+  },
+  {
+    "insurer_slug": "suhyup",
+    "kind": "customer",
+    "value": "1588-4119",
+    "url": "",
+    "note": ""
+  },
+  {
+    "insurer_slug": "suhyup",
+    "kind": "terms",
+    "value": "",
+    "url": "https://www.suhyup-bank.com/ib20/mnu/FPD00127#859",
+    "note": "약관확인"
+  },
+  {
+    "insurer_slug": "shinhyup",
+    "kind": "browser",
+    "value": "",
+    "url": "https://openbank.cu.co.kr/?sub=6000",
+    "note": "설계사 전산"
+  },
+  {
+    "insurer_slug": "shinhyup",
+    "kind": "customer",
+    "value": "1544-3030",
+    "url": "",
+    "note": ""
+  },
+  {
+    "insurer_slug": "shinhyup",
+    "kind": "terms",
+    "value": "",
+    "url": "https://openbank.cu.co.kr/?sub=6000",
+    "note": "약관확인"
+  },
+  {
+    "insurer_slug": "samsung-fire",
+    "kind": "claim_form",
+    "value": "",
+    "url": "https://www.samsungfire.com/download/claim/claim_new.pdf",
+    "note": "청구서 PDF 직접 다운로드"
+  },
+  {
+    "insurer_slug": "meritz",
+    "kind": "claim_form",
+    "value": "",
+    "url": "https://www.meritzfire.com/compensation.do",
+    "note": "보상·보험금청구"
+  },
+  {
+    "insurer_slug": "db",
+    "kind": "claim_form",
+    "value": "",
+    "url": "https://www.idbins.com/xici/lib/download/ba31.pdf",
+    "note": "청구서 PDF 직접 다운로드"
+  },
+  {
+    "insurer_slug": "kb",
+    "kind": "claim_form",
+    "value": "",
+    "url": "https://www.kbinsure.co.kr/CG205010001.ec",
+    "note": "보험금청구안내"
+  },
+  {
+    "insurer_slug": "hyundai",
+    "kind": "claim_form",
+    "value": "",
+    "url": "https://www.hi.co.kr/data/CL/amends01.pdf",
+    "note": "청구서 PDF 직접 다운로드"
+  },
+  {
+    "insurer_slug": "hanwha-son",
+    "kind": "claim_form",
+    "value": "",
+    "url": "https://www.hwgeneralins.com/upload/download/customer/insurance.pdf",
+    "note": "청구서 PDF 직접 다운로드"
+  },
+  {
+    "insurer_slug": "lotte",
+    "kind": "claim_form",
+    "value": "",
+    "url": "https://www.lotteins.co.kr/web/C/D/C/cdc_claim_0502.jsp",
+    "note": "필요서류 접수처"
+  },
+  {
+    "insurer_slug": "heungkuk-son",
+    "kind": "claim_form",
+    "value": "",
+    "url": "https://www.heungkukfire.co.kr/FRW/helpdesk/docInfoTemplate.do",
+    "note": "필요서류·양식"
+  },
+  {
+    "insurer_slug": "hana-son",
+    "kind": "claim_form",
+    "value": "",
+    "url": "https://www.hanainsure.co.kr/w/customer/counselInquiry/downloadCenter",
+    "note": "다운로드 센터"
+  },
+  {
+    "insurer_slug": "nh-son",
+    "kind": "claim_form",
+    "value": "",
+    "url": "https://www.nhfire.co.kr/file/service/%EB%B3%B4%ED%97%98%EA%B8%88%EC%B2%AD%EA%B5%AC%EC%84%9C_V12.pdf",
+    "note": "청구서 PDF 직접 다운로드"
+  },
+  {
+    "insurer_slug": "lina",
+    "kind": "claim_form",
+    "value": "",
+    "url": "https://www.chubb.com/kr-kr/claims-service/claims-documents-forms.html",
+    "note": "구비서류·양식"
+  },
+  {
+    "insurer_slug": "samsung-life",
+    "kind": "claim_form",
+    "value": "",
+    "url": "https://www.samsunglife.com/dcms/upload/2025/03/07/%EB%B3%B4%ED%97%98%EA%B8%88%EC%B2%AD%EA%B5%AC%EC%84%9C(%EA%B0%9C%EC%9D%B8)_20250307.pdf",
+    "note": "청구서 PDF 직접 다운로드"
+  },
+  {
+    "insurer_slug": "hanwha-life",
+    "kind": "claim_form",
+    "value": "",
+    "url": "https://www.hanwhalife.com/static/main/myPage/insurance/accident/document/MY_INAPADC_T70000.jsp",
+    "note": "신청서류 안내"
+  },
+  {
+    "insurer_slug": "kyobo",
+    "kind": "claim_form",
+    "value": "",
+    "url": "https://www.kyobo.com/dgt/web/customer/support/need-papers/list",
+    "note": "필요서류 안내"
+  },
+  {
+    "insurer_slug": "shinhan",
+    "kind": "claim_form",
+    "value": "",
+    "url": "https://cyber.shinhanlife.co.kr/print/doc_down_03.pdf",
+    "note": "청구서 PDF 직접 다운로드"
+  }
+]

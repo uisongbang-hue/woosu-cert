@@ -1,0 +1,18 @@
+export function PageHeader({
+  title,
+  description,
+}: {
+  title: string;
+  description?: string;
+}) {
+  return (
+    <div className="mb-6">
+      <h1 className="text-2xl font-bold tracking-tight md:text-3xl">{title}</h1>
+      {description && (
+        <p className="mt-1.5 text-sm text-muted-foreground md:text-base">
+          {description}
+        </p>
+      )}
+    </div>
+  );
+}

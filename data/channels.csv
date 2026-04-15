@@ -1,0 +1,206 @@
+insurer_slug,kind,value,url,note
+# 자동 생성: 원본 테이블 파싱 기반. 필요시 수정 후 재임포트.
+
+samsung-fire,browser,,https://erp.samsungfire.com,설계사 전산
+samsung-fire,customer,1588-5114,,
+samsung-fire,incall,1566-0553,,인콜 모니터링
+samsung-fire,helpdesk,1899-5005,,전산 헬프데스크
+samsung-fire,terms,,https://www.samsungfire.com/page/VH.REIF0011.do,약관확인
+meritz,browser,,http://sales.meritzfire.com,설계사 전산
+meritz,customer,1566-7711,,
+meritz,incall,1577-7711,,인콜 모니터링
+meritz,helpdesk,02-3786-2777,,전산 헬프데스크
+meritz,terms,,https://www.meritzfire.com/disclosure/product-announcement/product-list.do#!/,약관확인
+db,browser,,https://www.mdbins.com,설계사 전산
+db,customer,1588-0100,,
+db,incall,1566-0757,,인콜 모니터링
+db,helpdesk,02-2262-1241,,전산 헬프데스크
+db,terms,,https://www.idbins.com/FWMAIV1534.do,약관확인
+kb,browser,,https://nsales.kbinsure.co.kr/,설계사 전산
+kb,customer,1544-0114,,
+kb,incall,1544-0019,,인콜 모니터링
+kb,helpdesk,1544-8119,,전산 헬프데스크
+kb,terms,,https://www.kbinsure.co.kr/CG802030001.ec,약관확인
+hyundai,browser,,https://sp.hi.co.kr,설계사 전산
+hyundai,customer,1588-5656,,
+hyundai,incall,1577-3223,,인콜 모니터링
+hyundai,helpdesk,02-2628-4567,,전산 헬프데스크
+hyundai,terms,,https://www.hi.co.kr/serviceAction.do?view=bin/PA/03/HHPA03010M#none,약관확인
+hanwha-son,browser,,http://portal.hwgeneralins.com,설계사 전산
+hanwha-son,customer,1566-8000,,
+hanwha-son,incall,1670-1882,,인콜 모니터링
+hanwha-son,helpdesk,02-316-0111,,전산 헬프데스크
+hanwha-son,terms,,https://www.hwgeneralins.com/notice/ir/product-ing01.do,약관확인
+lotte,browser,,http://lottero.lotteins.co.kr,설계사 전산
+lotte,customer,1588-3344,,
+lotte,incall,1600-5182,,인콜 모니터링
+lotte,helpdesk,1599-8260,,전산 헬프데스크
+lotte,terms,,https://www.lotteins.co.kr/web/C/D/H/cdh190.jsp,약관확인
+heungkuk-son,browser,,https://sales.heungkukfire.co.kr/,설계사 전산
+heungkuk-son,customer,1688-1688,,
+heungkuk-son,incall,1688-6997,,인콜 모니터링
+heungkuk-son,helpdesk,031-786-8088,,전산 헬프데스크
+heungkuk-son,terms,,https://www.heungkukfire.co.kr/FRW/announce/insGoodsGongsiSale.do,약관확인
+hana-son,browser,,https://sfa.saleshana.com/index.html,설계사 전산
+hana-son,customer,1566-3000,,
+hana-son,incall,02-6299-6821,,인콜 모니터링
+hana-son,helpdesk,02-6670-8110,,전산 헬프데스크
+hana-son,terms,,https://www.hanainsure.co.kr/w/disclosure/product/saleProduct,약관확인
+nh-son,browser,,https://ss.nhfire.co.kr/,설계사 전산
+nh-son,customer,1644-9000,,
+nh-son,incall,1644-9600,,인콜 모니터링
+nh-son,helpdesk,1644-0090,,전산 헬프데스크
+nh-son,terms,,https://www.nhfire.co.kr/announce/productAnnounce/retrieveInsuranceProductsAnnounce.nhfire,약관확인
+lina,browser,,https://ga.linagi.com/,설계사 전산
+lina,customer,1566-5800,,
+lina,incall,1566-5800,,인콜 모니터링
+lina,helpdesk,02-6922-5100,,전산 헬프데스크
+lina,terms,,https://www.chubb.com/kr-kr/disclosure/product.html,약관확인
+aig,browser,,https://sso.aig.co.kr/gaLogin/gaLogin.jsp,설계사 전산
+aig,customer,1544-2792,,
+aig,incall,1544-2792,,인콜 모니터링
+aig,helpdesk,02-2260-6855,,전산 헬프데스크
+aig,terms,,https://www.aig.co.kr/wo/dpwot001.html?menuId=MS702,약관확인
+axa,customer,1566-1566,,
+yebyeol,browser,,https://mganet.mggeneralins.com,설계사 전산
+yebyeol,customer,1588-5959,,
+yebyeol,incall,1577-3777,,인콜 모니터링
+yebyeol,helpdesk,02-3788-2261,,전산 헬프데스크
+yebyeol,terms,,https://www.mggeneralins.com/PB031210DM.scp?menuId=MN0803006,약관확인
+samsung-life,browser,,https://connectplus.samsunglife.com:10443/gasso/login,설계사 전산
+samsung-life,customer,1588-3114,,
+samsung-life,incall,1588-3115,,인콜 모니터링
+samsung-life,helpdesk,02-311-4500,,전산 헬프데스크
+samsung-life,terms,,https://www.samsunglife.com/individual/products/disclosure/sales/PDO-PRPRI010110M,약관확인
+hanwha-life,browser,,https://hmp.hanwhalife.com/online/ga,설계사 전산
+hanwha-life,customer,1588-6363,,
+hanwha-life,incall,1800-6633,,인콜 모니터링
+hanwha-life,helpdesk,1522-6379,,전산 헬프데스크
+hanwha-life,terms,,https://hmp.hanwhalife.com/online/solutions/websquare/websquare.html?w2xPath=/online/ui/uv/gmn/uvgmn505mvw.xml,약관확인
+kyobo,browser,,https://ga.kyobo.com,설계사 전산
+kyobo,customer,1588-1001,,
+kyobo,incall,1588-1636,,인콜 모니터링
+kyobo,helpdesk,02-721-3130,,전산 헬프데스크
+kyobo,terms,,https://www.kyobo.com/dgt/web/product-official/all-product/search,약관확인
+shinhan,browser,,https://ga.shinhanlife.co.kr,설계사 전산
+shinhan,customer,1588-5580,,
+shinhan,incall,1522-2285,,인콜 모니터링
+shinhan,helpdesk,02-3455-4119,,전산 헬프데스크
+shinhan,terms,,https://www.shinhanlife.co.kr/hp/cdhi0010.do,약관확인
+kb-life,browser,,https://sfa.kblife.co.kr/,설계사 전산
+kb-life,customer,1588-3374,,
+kb-life,incall,1566-2730,,인콜 모니터링
+kb-life,helpdesk,1899-3899,,전산 헬프데스크
+kb-life,terms,,https://www.kblife.co.kr/?/=true&tab=currently-selling,약관확인
+nh-life,browser,,https://sfa.nhlife.co.kr:8443/,설계사 전산
+nh-life,customer,1544-4000,,
+nh-life,incall,1544-4422,,인콜 모니터링
+nh-life,helpdesk,02-3786-8800,,전산 헬프데스크
+nh-life,terms,,https://www.nhlife.co.kr/ho/on/HOON0004M00.nhl,약관확인
+dongyang,browser,,http://1004.myangel.co.kr,설계사 전산
+dongyang,customer,1577-1004,,
+dongyang,incall,080-899-1004,,인콜 모니터링
+dongyang,helpdesk,02-728-9900,,전산 헬프데스크
+dongyang,terms,,https://www.myangel.co.kr/paging/WE_AC_WEPAAP020100L,약관확인
+miraeasset,browser,,http://www.loveageplan.com,설계사 전산
+miraeasset,customer,1588-0220,,
+miraeasset,incall,1588-0220,,인콜 모니터링
+miraeasset,helpdesk,02-3271-5108,,전산 헬프데스크
+miraeasset,terms,,https://wga.loveageplan.com,약관확인
+kdb,browser,,http://kss.kdblife.co.kr,설계사 전산
+kdb,customer,1588-4040,,
+kdb,incall,1588-4040,,인콜 모니터링
+kdb,helpdesk,02-6303-2771,,전산 헬프데스크
+kdb,terms,,https://www.kdblife.co.kr/ajax.do?scrId=HDLMA002M02P,약관확인
+im-life,browser,,https://fgs.dgbfnlife.com:8443,설계사 전산
+im-life,customer,1588-4770,,
+im-life,incall,1588-4770,,인콜 모니터링
+im-life,helpdesk,02-2087-9594,,전산 헬프데스크
+im-life,terms,,https://www.dgbfnlife.com/BA/BA_A020.do,약관확인
+abl,browser,,http://ga.abllife.co.kr,설계사 전산
+abl,customer,1588-6500,,
+abl,incall,1566-1002,,인콜 모니터링
+abl,helpdesk,02-3787-8583,,전산 헬프데스크
+abl,terms,,https://www.abllife.co.kr/st/pban/prdtPban/whlPrdt/whlPrdt1/whlPrdt11?page=index,약관확인
+heungkuk-life,browser,,https://sales.heungkuklife.co.kr/,설계사 전산
+heungkuk-life,customer,1588-2288,,
+heungkuk-life,incall,1877-7006,,인콜 모니터링
+heungkuk-life,helpdesk,031-786-8088,,전산 헬프데스크
+heungkuk-life,terms,,https://www.heungkuklife.co.kr/front/public/saleProduct.do?searchFlgSale=Y,약관확인
+hana-life,browser,,https://ga.hanalife.co.kr,설계사 전산
+hana-life,customer,1577-1112,,
+hana-life,incall,1577-1112,,인콜 모니터링
+hana-life,terms,,https://hanalife.co.kr/anm/product/allProduct.do?status=on,약관확인
+db-life,browser,,http://etopia.idblife.com,설계사 전산
+db-life,customer,1588-3131,,
+db-life,incall,02-6470-7663,,인콜 모니터링
+db-life,helpdesk,02-2119-5151,,전산 헬프데스크
+db-life,terms,,https://www.idblife.com/notice/product/sale,약관확인
+lina-life,browser,,https://ga.lina.co.kr,설계사 전산
+lina-life,customer,1588-0058,,
+lina-life,incall,1588-2442,,인콜 모니터링
+lina-life,helpdesk,02-3781-2006,,전산 헬프데스크
+lina-life,terms,,https://ga.lina.co.kr/html/gap/GA/GAZ911M0.html,약관확인
+ibk,browser,,https://sf.ibki.co.kr/,설계사 전산
+ibk,customer,1577-4117,,
+ibk,incall,02-2270-1661,,인콜 모니터링
+ibk,helpdesk,02-2270-1692,,전산 헬프데스크
+ibk,terms,,https://www.ibki.co.kr/process/HP_PBANO_PDT_SP_INDV,약관확인
+met,browser,,http://metplus.metlife.co.kr,설계사 전산
+met,customer,1588-9600,,
+met,incall,1588-9609,,인콜 모니터링
+met,helpdesk,1899-0751,,전산 헬프데스크
+met,terms,,https://brand.metlife.co.kr/pn/paReal/insuProductDisclMain.do,약관확인
+chubb-life,browser,,http://esmart.chubblife.co.kr,설계사 전산
+chubb-life,customer,1599-4600,,
+chubb-life,incall,1599-4600,,인콜 모니터링
+chubb-life,helpdesk,1599-4646,,전산 헬프데스크
+chubb-life,terms,,https://www.chubblife.co.kr/front/official/sale/list.do,약관확인
+pubon,browser,,https://ez.fubonhyundai.com/,설계사 전산
+pubon,customer,1577-3311,,
+pubon,incall,080-860-1212,,인콜 모니터링
+pubon,terms,,https://www.fubonhyundai.com/#CUSI150102010101,약관확인
+cardif,browser,,http://ga.cardif.co.kr,설계사 전산
+cardif,customer,1688-1118,,
+cardif,incall,1688-1118,,인콜 모니터링
+cardif,helpdesk,1577-3435,,전산 헬프데스크
+cardif,terms,,https://www.cardif.co.kr/disclosure/papag101.do,약관확인
+aia,browser,,https://imap.aia.co.kr,설계사 전산
+aia,customer,1588-9898,,
+aia,incall,1588-2513,,인콜 모니터링
+aia,helpdesk,1588-2937,,전산 헬프데스크
+aia,terms,,https://www.aia.co.kr/ko/our-products.html,약관확인
+post,browser,,https://epostlife.go.kr/LNLNDM10DM.do,설계사 전산
+post,customer,1599-0100,,
+post,terms,,https://mall.epostbank.go.kr/IPPSKE0000.do,약관확인
+thek,browser,,https://www.ktcu.or.kr/MH/MH-P010M01.do,설계사 전산
+thek,customer,1577-3993,,
+thek,incall,02-3278-9696,,인콜 모니터링
+thek,terms,,https://www.ktcu.or.kr/IS/IS-P170M01.do,약관확인
+mg,browser,,https://insure.kfcc.co.kr/,설계사 전산
+mg,customer,1599-9010,,
+mg,incall,02-3016-7674,,인콜 모니터링
+mg,terms,,https://insu.kfcc.co.kr/ino/inoGuide.do,약관확인
+suhyup,browser,,https://www.suhyup-bank.com/,설계사 전산
+suhyup,customer,1588-4119,,
+suhyup,terms,,https://www.suhyup-bank.com/ib20/mnu/FPD00127#859,약관확인
+shinhyup,browser,,https://openbank.cu.co.kr/?sub=6000,설계사 전산
+shinhyup,customer,1544-3030,,
+shinhyup,terms,,https://openbank.cu.co.kr/?sub=6000,약관확인
+
+# ========== 청구서/필요서류 (각 보험사 공식 안내 페이지) ==========
+samsung-fire,claim_form,,https://www.samsungfire.com/download/claim/claim_new.pdf,청구서 PDF 직접 다운로드
+meritz,claim_form,,https://www.meritzfire.com/compensation.do,보상·보험금청구
+db,claim_form,,https://www.idbins.com/xici/lib/download/ba31.pdf,청구서 PDF 직접 다운로드
+kb,claim_form,,https://www.kbinsure.co.kr/CG205010001.ec,보험금청구안내
+hyundai,claim_form,,https://www.hi.co.kr/data/CL/amends01.pdf,청구서 PDF 직접 다운로드
+hanwha-son,claim_form,,https://www.hwgeneralins.com/upload/download/customer/insurance.pdf,청구서 PDF 직접 다운로드
+lotte,claim_form,,https://www.lotteins.co.kr/web/C/D/C/cdc_claim_0502.jsp,필요서류 접수처
+heungkuk-son,claim_form,,https://www.heungkukfire.co.kr/FRW/helpdesk/docInfoTemplate.do,필요서류·양식
+hana-son,claim_form,,https://www.hanainsure.co.kr/w/customer/counselInquiry/downloadCenter,다운로드 센터
+nh-son,claim_form,,https://www.nhfire.co.kr/file/service/%EB%B3%B4%ED%97%98%EA%B8%88%EC%B2%AD%EA%B5%AC%EC%84%9C_V12.pdf,청구서 PDF 직접 다운로드
+lina,claim_form,,https://www.chubb.com/kr-kr/claims-service/claims-documents-forms.html,구비서류·양식
+samsung-life,claim_form,,https://www.samsunglife.com/dcms/upload/2025/03/07/%EB%B3%B4%ED%97%98%EA%B8%88%EC%B2%AD%EA%B5%AC%EC%84%9C(%EA%B0%9C%EC%9D%B8)_20250307.pdf,청구서 PDF 직접 다운로드
+hanwha-life,claim_form,,https://www.hanwhalife.com/static/main/myPage/insurance/accident/document/MY_INAPADC_T70000.jsp,신청서류 안내
+kyobo,claim_form,,https://www.kyobo.com/dgt/web/customer/support/need-papers/list,필요서류 안내
+shinhan,claim_form,,https://cyber.shinhanlife.co.kr/print/doc_down_03.pdf,청구서 PDF 직접 다운로드
