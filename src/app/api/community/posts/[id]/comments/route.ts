@@ -26,7 +26,8 @@ export async function POST(
   if (!c) return NextResponse.json({ error: "invalid" }, { status: 400 });
   revalidatePath("/community");
   revalidatePath(`/community/${params.id}`);
-  return NextResponse.json(c);
+  const { ip: _ip, ...safe } = c!;
+  return NextResponse.json(safe);
 }
 
 export async function DELETE(

@@ -275,7 +275,10 @@ export async function createComment(input: {
 // ─── deletePost ───
 export async function deletePost(id: string, ip: string, adminKey?: string) {
   const isAdmin =
-    adminKey && process.env.ADMIN_KEY && adminKey === process.env.ADMIN_KEY;
+    adminKey &&
+    process.env.ADMIN_KEY &&
+    adminKey.length === process.env.ADMIN_KEY.length &&
+    crypto.timingSafeEqual(Buffer.from(adminKey), Buffer.from(process.env.ADMIN_KEY));
 
   if (isFirebaseConfigured()) {
     const db = getDb();
@@ -312,7 +315,10 @@ export async function deleteComment(
   adminKey?: string
 ) {
   const isAdmin =
-    adminKey && process.env.ADMIN_KEY && adminKey === process.env.ADMIN_KEY;
+    adminKey &&
+    process.env.ADMIN_KEY &&
+    adminKey.length === process.env.ADMIN_KEY.length &&
+    crypto.timingSafeEqual(Buffer.from(adminKey), Buffer.from(process.env.ADMIN_KEY));
 
   if (isFirebaseConfigured()) {
     const db = getDb();

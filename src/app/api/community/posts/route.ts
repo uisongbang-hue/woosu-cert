@@ -27,5 +27,6 @@ export async function POST(req: NextRequest) {
   });
   if (!post) return NextResponse.json({ error: "invalid" }, { status: 400 });
   revalidatePath("/community");
-  return NextResponse.json(post);
+  const { ip: _ip, ...safe } = post!;
+  return NextResponse.json(safe);
 }

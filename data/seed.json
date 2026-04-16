@@ -244,21 +244,9 @@
   "tools": [
     {
       "category": "auto",
-      "title": "자동차보험 대면 간편견적",
-      "url": "https://kpub.knia.or.kr/carInsuranceDisc/insurance/carInsurance.do",
-      "sort_order": 0
-    },
-    {
-      "category": "auto",
       "title": "보험다모아 비교견적",
       "url": "https://e-insmarket.or.kr/aimt/aimtRealIntro.knia",
       "sort_order": 10
-    },
-    {
-      "category": "auto",
-      "title": "다이렉트 계약 체결",
-      "url": "http://다이렉트비교견적.com",
-      "sort_order": 20
     },
     {
       "category": "auto",

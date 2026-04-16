@@ -6,7 +6,7 @@ import {
   Calculator,
   GraduationCap,
   Stethoscope,
-  Newspaper,
+  ClipboardList,
   Users,
   ExternalLink,
 } from "lucide-react";
@@ -32,7 +32,13 @@ const tiles: Tile[] = [
     icon: Stethoscope,
     external: true,
   },
-  { href: "/insurance-history", label: "실손보험 변천사", desc: "세대별 자기부담·갱신 비교", icon: Newspaper },
+  {
+    href: "https://www.hira.or.kr/dummy.do?pgmid=HIRAA030009200000",
+    label: "심평원 내진료정보",
+    desc: "건강보험 진료내역 조회 (새 창)",
+    icon: ClipboardList,
+    external: true,
+  },
   { href: "/community", label: "설계사 라운지", desc: "익명 게시판·댓글", icon: Users },
 ];
 
