@@ -48,10 +48,11 @@ export function sanitize(s: string, max = 10000) {
 
 export function formatTime(t: number) {
   const d = new Date(t);
+  const kst = new Date(d.getTime() + 9 * 60 * 60 * 1000);
   const pad = (n: number) => String(n).padStart(2, "0");
-  return `${d.getFullYear().toString().slice(2)}.${pad(d.getMonth() + 1)}.${pad(
-    d.getDate()
-  )} ${pad(d.getHours())}:${pad(d.getMinutes())}`;
+  return `${kst.getUTCFullYear().toString().slice(2)}.${pad(kst.getUTCMonth() + 1)}.${pad(
+    kst.getUTCDate()
+  )} ${pad(kst.getUTCHours())}:${pad(kst.getUTCMinutes())}`;
 }
 
 function tsToMs(v: unknown): number {
