@@ -76,7 +76,7 @@ export default async function OgImage() {
             color: "#94a3b8",
           }}
         >
-          <div>woosu-cert.vercel.app</div>
+          <div>우수인증설계사.com</div>
           <div style={{ color: "#60a5fa", fontWeight: 600 }}>⌘K 로 빠른 검색</div>
         </div>
       </div>
