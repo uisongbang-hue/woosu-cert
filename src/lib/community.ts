@@ -11,6 +11,7 @@ import {
   increment,
   orderBy,
   query,
+  limit as fbLimit,
   serverTimestamp,
   Timestamp,
 } from "firebase/firestore";
@@ -74,17 +75,15 @@ function saveLocal(s: LocalStore) {
 }
 
 // ─── listPosts ───
-export async function listPosts(q?: string) {
+export async function listPosts(q?: string, max = 30) {
   if (isFirebaseConfigured()) {
     const db = getDb();
     const snap = await getDocs(
-      query(collection(db, "posts"), orderBy("createdAt", "desc"))
+      query(collection(db, "posts"), orderBy("createdAt", "desc"), fbLimit(max))
     );
-    const posts: (Post & { commentCount: number })[] = [];
-    for (const d of snap.docs) {
+    const posts: (Post & { commentCount: number })[] = snap.docs.map((d) => {
       const data = d.data();
-      const csnap = await getDocs(collection(db, "posts", d.id, "comments"));
-      posts.push({
+      return {
         id: d.id,
         nickname: data.nickname,
         title: data.title,
@@ -92,9 +91,9 @@ export async function listPosts(q?: string) {
         createdAt: tsToMs(data.createdAt),
         views: data.views || 0,
         ip: data.ip,
-        commentCount: csnap.size,
-      });
-    }
+        commentCount: data.commentCount || 0,
+      };
+    });
     if (q) {
       const t = q.toLowerCase();
       return posts.filter(
@@ -114,7 +113,7 @@ export async function listPosts(q?: string) {
         p.title.toLowerCase().includes(t) || p.body.toLowerCase().includes(t)
     );
   }
-  return posts.map((p) => ({
+  return posts.slice(0, max).map((p) => ({
     ...p,
     commentCount: s.comments.filter((c) => c.postId === p.id).length,
   }));
@@ -243,6 +242,9 @@ export async function createComment(input: {
         createdAt: serverTimestamp(),
       }
     );
+    updateDoc(doc(db, "posts", input.postId), {
+      commentCount: increment(1),
+    }).catch(() => {});
     return {
       id: ref.id,
       postId: input.postId,

@@ -3,7 +3,7 @@ import { listPosts, formatTime } from "@/lib/community";
 import { PageHeader } from "@/components/page-header";
 import { MessageSquare, Eye, PenSquare } from "lucide-react";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 30;
 
 export default async function CommunityPage({
   searchParams,

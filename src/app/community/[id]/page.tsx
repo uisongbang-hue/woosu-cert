@@ -4,7 +4,7 @@ import { getPost, formatTime } from "@/lib/community";
 import { ChevronLeft, Eye, MessageSquare } from "lucide-react";
 import { CommentBox } from "./comment-box";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 30;
 
 export default async function PostDetailPage({
   params,
