@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { getPost, formatTime } from "@/lib/community";
 import { ChevronLeft, Eye, MessageSquare } from "lucide-react";
 import { CommentBox } from "./comment-box";
+import { DeletePostButton, DeleteCommentButton } from "./delete-button";
 
 export const revalidate = 30;
 
@@ -38,6 +39,8 @@ export default async function PostDetailPage({
             <Eye className="h-3 w-3" />
             {post.views}
           </span>
+          <span>·</span>
+          <DeletePostButton postId={post.id} />
         </div>
         <div className="mt-5 whitespace-pre-wrap text-[15px] leading-relaxed">
           {post.body}
@@ -64,6 +67,8 @@ export default async function PostDetailPage({
                     </span>
                     <span>·</span>
                     <span>{formatTime(c.createdAt)}</span>
+                    <span>·</span>
+                    <DeleteCommentButton postId={post.id} commentId={c.id} />
                   </div>
                   <div className="mt-1 whitespace-pre-wrap text-sm leading-relaxed">
                     {c.body}

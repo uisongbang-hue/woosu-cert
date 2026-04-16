@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { revalidatePath } from "next/cache";
-import { createComment } from "@/lib/community";
+import { createComment, deleteComment } from "@/lib/community";
 
 export const dynamic = "force-dynamic";
 
@@ -27,4 +27,22 @@ export async function POST(
   revalidatePath("/community");
   revalidatePath(`/community/${params.id}`);
   return NextResponse.json(c);
+}
+
+export async function DELETE(
+  req: NextRequest,
+  { params }: { params: { id: string } }
+) {
+  const { commentId } = await req.json().catch(() => ({ commentId: "" }));
+  if (!commentId)
+    return NextResponse.json({ error: "missing commentId" }, { status: 400 });
+  const adminKey = req.headers.get("x-admin-key") || undefined;
+  const result = await deleteComment(params.id, commentId, getIp(req), adminKey);
+  if (!result.ok) {
+    const status = result.reason === "not_found" ? 404 : 403;
+    return NextResponse.json({ error: result.reason }, { status });
+  }
+  revalidatePath("/community");
+  revalidatePath(`/community/${params.id}`);
+  return NextResponse.json({ ok: true });
 }

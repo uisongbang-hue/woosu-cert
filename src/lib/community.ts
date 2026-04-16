@@ -6,6 +6,7 @@ import {
   doc,
   getDoc,
   getDocs,
+  deleteDoc,
   addDoc,
   updateDoc,
   increment,
@@ -268,4 +269,73 @@ export async function createComment(input: {
   s.comments.push(c);
   saveLocal(s);
   return c;
+}
+
+// ─── deletePost ───
+export async function deletePost(id: string, ip: string, adminKey?: string) {
+  const isAdmin =
+    adminKey && process.env.ADMIN_KEY && adminKey === process.env.ADMIN_KEY;
+
+  if (isFirebaseConfigured()) {
+    const db = getDb();
+    const ref = doc(db, "posts", id);
+    const snap = await getDoc(ref);
+    if (!snap.exists()) return { ok: false, reason: "not_found" };
+    const data = snap.data();
+    if (!isAdmin && data.ip !== ipTag(ip))
+      return { ok: false, reason: "forbidden" };
+    const csnap = await getDocs(collection(db, "posts", id, "comments"));
+    for (const c of csnap.docs) {
+      await deleteDoc(c.ref);
+    }
+    await deleteDoc(ref);
+    return { ok: true };
+  }
+  // 로컬
+  const s = loadLocal();
+  const idx = s.posts.findIndex((p) => p.id === id);
+  if (idx === -1) return { ok: false, reason: "not_found" };
+  if (!isAdmin && s.posts[idx].ip !== ipTag(ip))
+    return { ok: false, reason: "forbidden" };
+  s.posts.splice(idx, 1);
+  s.comments = s.comments.filter((c) => c.postId !== id);
+  saveLocal(s);
+  return { ok: true };
+}
+
+// ─── deleteComment ───
+export async function deleteComment(
+  postId: string,
+  commentId: string,
+  ip: string,
+  adminKey?: string
+) {
+  const isAdmin =
+    adminKey && process.env.ADMIN_KEY && adminKey === process.env.ADMIN_KEY;
+
+  if (isFirebaseConfigured()) {
+    const db = getDb();
+    const ref = doc(db, "posts", postId, "comments", commentId);
+    const snap = await getDoc(ref);
+    if (!snap.exists()) return { ok: false, reason: "not_found" };
+    const data = snap.data();
+    if (!isAdmin && data.ip !== ipTag(ip))
+      return { ok: false, reason: "forbidden" };
+    await deleteDoc(ref);
+    updateDoc(doc(db, "posts", postId), {
+      commentCount: increment(-1),
+    }).catch(() => {});
+    return { ok: true };
+  }
+  // 로컬
+  const s = loadLocal();
+  const idx = s.comments.findIndex(
+    (c) => c.id === commentId && c.postId === postId
+  );
+  if (idx === -1) return { ok: false, reason: "not_found" };
+  if (!isAdmin && s.comments[idx].ip !== ipTag(ip))
+    return { ok: false, reason: "forbidden" };
+  s.comments.splice(idx, 1);
+  saveLocal(s);
+  return { ok: true };
 }
