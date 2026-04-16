@@ -26,6 +26,7 @@ export async function POST(
   if (!c) return NextResponse.json({ error: "invalid" }, { status: 400 });
   revalidatePath("/community");
   revalidatePath(`/community/${params.id}`);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { ip: _ip, ...safe } = c!;
   return NextResponse.json(safe);
 }
