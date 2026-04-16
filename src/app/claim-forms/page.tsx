@@ -5,25 +5,39 @@ import { FileDown, ExternalLink, Phone, PawPrint } from "lucide-react";
 
 export const dynamic = "force-dynamic";
 
-const contactMap: Record<string, { call: string; fax: string }> = {
+const contactMap: Record<string, { call: string; fax?: string }> = {
+  "samsung-fire": { call: "1588-5114", fax: "0505-162-0777" },
+  "meritz": { call: "1566-7711", fax: "0505-021-3400" },
+  "db": { call: "1588-0100", fax: "0505-181-4862" },
+  "kb": { call: "1544-0114", fax: "0505-136-6500" },
+  "hyundai": { call: "1588-5656", fax: "0507-774-6060" },
+  "hanwha-son": { call: "1566-8000", fax: "0502-779-1004" },
+  "lotte": { call: "1588-3344", fax: "0507-333-9999" },
+  "heungkuk-son": { call: "1688-1688", fax: "0504-800-0700" },
+  "hana-son": { call: "1566-3000" },
+  "nh-son": { call: "1644-9000", fax: "0505-060-7000" },
+  "lina": { call: "1566-5800" },
+  "aig": { call: "1544-2792", fax: "02-2011-4607" },
   "samsung-life": { call: "1588-3114", fax: "콜센터 가상팩스" },
   "kyobo": { call: "1588-1001", fax: "콜센터 가상팩스" },
-  "kb-life": { call: "1599-0882", fax: "02-6220-9912" },
-  "abl": { call: "1588-6500", fax: "02-3299-5544" },
   "hanwha-life": { call: "1588-6363", fax: "콜센터 가상팩스" },
-  "heungkuk-life": { call: "1588-2288", fax: "콜센터 가상팩스" },
-  "dongyang": { call: "1577-1004", fax: "02-3289-4517" },
-  "lotte": { call: "1588-3344", fax: "0507-333-9999" },
-  "nh-life": { call: "1833-4100", fax: "02-6971-6040" },
-  "db-life": { call: "1588-3131", fax: "0505-129-3134" },
-  "aia": { call: "1588-9898", fax: "02-2021-4508" },
-  "lina-life": { call: "1588-0058", fax: "02-6944-1200" },
-  "kdb": { call: "1588-4040", fax: "02-2669-7930" },
-  "miraeasset": { call: "1588-0220", fax: "콜센터 가상팩스" },
-  "met": { call: "1588-9600", fax: "02-3469-9428" },
   "shinhan": { call: "1588-5580", fax: "콜센터 가상팩스" },
-  "chubb-life": { call: "1599-4600", fax: "02-3480-7801" },
+  "nh-life": { call: "1833-4100", fax: "02-6971-6040" },
+  "dongyang": { call: "1577-1004", fax: "02-3289-4517" },
+  "miraeasset": { call: "1588-0220", fax: "콜센터 가상팩스" },
+  "kdb": { call: "1588-4040", fax: "02-2669-7930" },
+  "abl": { call: "1588-6500", fax: "02-3299-5544" },
+  "heungkuk-life": { call: "1588-2288", fax: "콜센터 가상팩스" },
+  "lina-life": { call: "1588-0058", fax: "02-6944-1200" },
+  "aia": { call: "1588-9898", fax: "02-2021-4508" },
   "pubon": { call: "1577-3311", fax: "0505-106-0311" },
+  "db-life": { call: "1588-3131", fax: "0505-129-3134" },
+  "met": { call: "1588-9600", fax: "02-3469-9428" },
+  "chubb-life": { call: "1599-4600", fax: "02-3480-7801" },
+  "kb-life": { call: "1599-0882", fax: "02-6220-9912" },
+  "post": { call: "1599-0100" },
+  "mg": { call: "1599-9010" },
+  "suhyup": { call: "1588-4119" },
 };
 
 export default async function ClaimFormsPage() {
@@ -120,9 +134,9 @@ export default async function ClaimFormsPage() {
                               {contact.call}
                             </a>
                           </span>
-                          <span>
-                            팩스 {contact.fax}
-                          </span>
+                          {contact.fax && (
+                            <span>팩스 {contact.fax}</span>
+                          )}
                         </div>
                       )}
                     </div>
