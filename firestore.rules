@@ -7,7 +7,8 @@ service cloud.firestore {
         && request.resource.data.title is string && request.resource.data.title.size() > 0 && request.resource.data.title.size() <= 120
         && request.resource.data.body is string && request.resource.data.body.size() > 0 && request.resource.data.body.size() <= 10000
         && request.resource.data.nickname is string && request.resource.data.nickname.size() <= 40;
-      allow update: if true;
+      allow update: if
+        request.resource.data.diff(resource.data).affectedKeys().hasOnly(['views','commentCount']);
       allow delete: if true;
 
       match /comments/{commentId} {
@@ -15,7 +16,7 @@ service cloud.firestore {
         allow create: if request.resource.data.keys().hasAll(['body','nickname','createdAt'])
           && request.resource.data.body is string && request.resource.data.body.size() > 0 && request.resource.data.body.size() <= 2000
           && request.resource.data.nickname is string && request.resource.data.nickname.size() <= 40;
-        allow update: if true;
+        allow update: if false;
         allow delete: if true;
       }
     }

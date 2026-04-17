@@ -1,16 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 import { revalidatePath } from "next/cache";
 import { createComment, deleteComment } from "@/lib/community";
+import { getClientIp } from "@/lib/request-ip";
 
 export const dynamic = "force-dynamic";
-
-function getIp(req: NextRequest) {
-  return (
-    req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
-    req.headers.get("x-real-ip") ||
-    "0.0.0.0"
-  );
-}
 
 export async function POST(
   req: NextRequest,
@@ -21,7 +14,7 @@ export async function POST(
     postId: params.id,
     nickname: body.nickname,
     body: body.body,
-    ip: getIp(req),
+    ip: getClientIp(req),
   });
   if (!c) return NextResponse.json({ error: "invalid" }, { status: 400 });
   revalidatePath("/community");
@@ -39,7 +32,7 @@ export async function DELETE(
   if (!commentId)
     return NextResponse.json({ error: "missing commentId" }, { status: 400 });
   const adminKey = req.headers.get("x-admin-key") || undefined;
-  const result = await deleteComment(params.id, commentId, getIp(req), adminKey);
+  const result = await deleteComment(params.id, commentId, getClientIp(req), adminKey);
   if (!result.ok) {
     const status = result.reason === "not_found" ? 404 : 403;
     return NextResponse.json({ error: result.reason }, { status });

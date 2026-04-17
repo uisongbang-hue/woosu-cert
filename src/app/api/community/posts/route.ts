@@ -1,16 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 import { revalidatePath } from "next/cache";
 import { createPost, listPosts } from "@/lib/community";
+import { getClientIp } from "@/lib/request-ip";
 
 export const dynamic = "force-dynamic";
-
-function getIp(req: NextRequest) {
-  return (
-    req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
-    req.headers.get("x-real-ip") ||
-    "0.0.0.0"
-  );
-}
 
 export async function GET(req: NextRequest) {
   const q = req.nextUrl.searchParams.get("q") || undefined;
@@ -23,7 +16,7 @@ export async function POST(req: NextRequest) {
     nickname: body.nickname,
     title: body.title,
     body: body.body,
-    ip: getIp(req),
+    ip: getClientIp(req),
   });
   if (!post) return NextResponse.json({ error: "invalid" }, { status: 400 });
   revalidatePath("/community");

@@ -1,22 +1,8 @@
 import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
-import {
-  collection,
-  doc,
-  getDoc,
-  getDocs,
-  deleteDoc,
-  addDoc,
-  updateDoc,
-  increment,
-  orderBy,
-  query,
-  limit as fbLimit,
-  serverTimestamp,
-  Timestamp,
-} from "firebase/firestore";
-import { getDb, isFirebaseConfigured } from "./firebase";
+import { FieldValue, Timestamp } from "firebase-admin/firestore";
+import { getAdminDb, isAdminConfigured } from "./firebase-admin";
 
 export type Post = {
   id: string;
@@ -61,7 +47,7 @@ function tsToMs(v: unknown): number {
   return Date.now();
 }
 
-// ─── 로컬 JSON 폴백 (Firebase 미설정 시 dev 전용) ───
+// ─── 로컬 JSON 폴백 (Admin SDK 미설정 시 dev 전용) ───
 const FILE = path.join(process.cwd(), "data", "community.json");
 type LocalStore = { posts: Post[]; comments: Comment[] };
 function loadLocal(): LocalStore {
@@ -78,11 +64,13 @@ function saveLocal(s: LocalStore) {
 
 // ─── listPosts ───
 export async function listPosts(q?: string, max = 30) {
-  if (isFirebaseConfigured()) {
-    const db = getDb();
-    const snap = await getDocs(
-      query(collection(db, "posts"), orderBy("createdAt", "desc"), fbLimit(max))
-    );
+  if (isAdminConfigured()) {
+    const db = getAdminDb();
+    const snap = await db
+      .collection("posts")
+      .orderBy("createdAt", "desc")
+      .limit(max)
+      .get();
     const posts: (Post & { commentCount: number })[] = snap.docs.map((d) => {
       const data = d.data();
       return {
@@ -123,14 +111,14 @@ export async function listPosts(q?: string, max = 30) {
 
 // ─── getPost ───
 export async function getPost(id: string) {
-  if (isFirebaseConfigured()) {
-    const db = getDb();
-    const ref = doc(db, "posts", id);
-    const snap = await getDoc(ref);
-    if (!snap.exists()) return null;
+  if (isAdminConfigured()) {
+    const db = getAdminDb();
+    const ref = db.collection("posts").doc(id);
+    const snap = await ref.get();
+    if (!snap.exists) return null;
     // 조회수 +1 (best-effort)
-    updateDoc(ref, { views: increment(1) }).catch(() => {});
-    const data = snap.data();
+    ref.update({ views: FieldValue.increment(1) }).catch(() => {});
+    const data = snap.data()!;
     const post: Post = {
       id: snap.id,
       nickname: data.nickname,
@@ -140,9 +128,10 @@ export async function getPost(id: string) {
       views: (data.views || 0) + 1,
       ip: data.ip,
     };
-    const csnap = await getDocs(
-      query(collection(db, "posts", id, "comments"), orderBy("createdAt", "asc"))
-    );
+    const csnap = await ref
+      .collection("comments")
+      .orderBy("createdAt", "asc")
+      .get();
     const comments: Comment[] = csnap.docs.map((d) => {
       const c = d.data();
       return {
@@ -182,15 +171,15 @@ export async function createPost(input: {
     (input.nickname && sanitize(input.nickname, 20).trim()) || `ㅇㅇ(${tag})`;
   if (!title || !body) return null;
 
-  if (isFirebaseConfigured()) {
-    const db = getDb();
-    const ref = await addDoc(collection(db, "posts"), {
+  if (isAdminConfigured()) {
+    const db = getAdminDb();
+    const ref = await db.collection("posts").add({
       title,
       body,
       nickname,
       ip: tag,
       views: 0,
-      createdAt: serverTimestamp(),
+      createdAt: FieldValue.serverTimestamp(),
     });
     return {
       id: ref.id,
@@ -231,22 +220,20 @@ export async function createComment(input: {
     (input.nickname && sanitize(input.nickname, 20).trim()) || `ㅇㅇ(${tag})`;
   if (!body) return null;
 
-  if (isFirebaseConfigured()) {
-    const db = getDb();
-    const parent = await getDoc(doc(db, "posts", input.postId));
-    if (!parent.exists()) return null;
-    const ref = await addDoc(
-      collection(db, "posts", input.postId, "comments"),
-      {
-        body,
-        nickname,
-        ip: tag,
-        createdAt: serverTimestamp(),
-      }
-    );
-    updateDoc(doc(db, "posts", input.postId), {
-      commentCount: increment(1),
-    }).catch(() => {});
+  if (isAdminConfigured()) {
+    const db = getAdminDb();
+    const postRef = db.collection("posts").doc(input.postId);
+    const parent = await postRef.get();
+    if (!parent.exists) return null;
+    const ref = await postRef.collection("comments").add({
+      body,
+      nickname,
+      ip: tag,
+      createdAt: FieldValue.serverTimestamp(),
+    });
+    postRef
+      .update({ commentCount: FieldValue.increment(1) })
+      .catch(() => {});
     return {
       id: ref.id,
       postId: input.postId,
@@ -272,27 +259,32 @@ export async function createComment(input: {
   return c;
 }
 
+function verifyAdmin(adminKey?: string): boolean {
+  const expected = process.env.ADMIN_KEY;
+  if (!adminKey || !expected) return false;
+  const a = Buffer.from(adminKey);
+  const b = Buffer.from(expected);
+  if (a.length !== b.length) return false;
+  return crypto.timingSafeEqual(a, b);
+}
+
 // ─── deletePost ───
 export async function deletePost(id: string, ip: string, adminKey?: string) {
-  const isAdmin =
-    adminKey &&
-    process.env.ADMIN_KEY &&
-    adminKey.length === process.env.ADMIN_KEY.length &&
-    crypto.timingSafeEqual(Buffer.from(adminKey), Buffer.from(process.env.ADMIN_KEY));
+  const isAdmin = verifyAdmin(adminKey);
 
-  if (isFirebaseConfigured()) {
-    const db = getDb();
-    const ref = doc(db, "posts", id);
-    const snap = await getDoc(ref);
-    if (!snap.exists()) return { ok: false, reason: "not_found" };
-    const data = snap.data();
+  if (isAdminConfigured()) {
+    const db = getAdminDb();
+    const ref = db.collection("posts").doc(id);
+    const snap = await ref.get();
+    if (!snap.exists) return { ok: false, reason: "not_found" };
+    const data = snap.data()!;
     if (!isAdmin && data.ip !== ipTag(ip))
       return { ok: false, reason: "forbidden" };
-    const csnap = await getDocs(collection(db, "posts", id, "comments"));
-    for (const c of csnap.docs) {
-      await deleteDoc(c.ref);
-    }
-    await deleteDoc(ref);
+    const csnap = await ref.collection("comments").get();
+    const batch = db.batch();
+    for (const c of csnap.docs) batch.delete(c.ref);
+    batch.delete(ref);
+    await batch.commit();
     return { ok: true };
   }
   // 로컬
@@ -314,24 +306,21 @@ export async function deleteComment(
   ip: string,
   adminKey?: string
 ) {
-  const isAdmin =
-    adminKey &&
-    process.env.ADMIN_KEY &&
-    adminKey.length === process.env.ADMIN_KEY.length &&
-    crypto.timingSafeEqual(Buffer.from(adminKey), Buffer.from(process.env.ADMIN_KEY));
+  const isAdmin = verifyAdmin(adminKey);
 
-  if (isFirebaseConfigured()) {
-    const db = getDb();
-    const ref = doc(db, "posts", postId, "comments", commentId);
-    const snap = await getDoc(ref);
-    if (!snap.exists()) return { ok: false, reason: "not_found" };
-    const data = snap.data();
+  if (isAdminConfigured()) {
+    const db = getAdminDb();
+    const postRef = db.collection("posts").doc(postId);
+    const ref = postRef.collection("comments").doc(commentId);
+    const snap = await ref.get();
+    if (!snap.exists) return { ok: false, reason: "not_found" };
+    const data = snap.data()!;
     if (!isAdmin && data.ip !== ipTag(ip))
       return { ok: false, reason: "forbidden" };
-    await deleteDoc(ref);
-    updateDoc(doc(db, "posts", postId), {
-      commentCount: increment(-1),
-    }).catch(() => {});
+    await ref.delete();
+    postRef
+      .update({ commentCount: FieldValue.increment(-1) })
+      .catch(() => {});
     return { ok: true };
   }
   // 로컬

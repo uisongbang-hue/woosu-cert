@@ -42,6 +42,11 @@ next-env.d.ts
 # portal tunnel identity (private key — DO NOT commit)
 identity.json
 
+# Firebase service account (admin SDK private key — DO NOT commit)
+/secrets/
+firebase-admin*.json
+*-firebase-adminsdk-*.json
+
 # local community store (Firebase 사용 중)
 data/community.json
 
