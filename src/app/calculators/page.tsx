@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { getTools } from "@/lib/data";
 import { PageHeader } from "@/components/page-header";
-import { Calculator, ExternalLink, Cake } from "lucide-react";
+import { Calculator, ExternalLink, Cake, Stethoscope } from "lucide-react";
 
 export const dynamic = "force-dynamic";
 
@@ -11,6 +11,12 @@ const BUILTIN = [
     title: "보험나이 계산",
     desc: "만나이 + 6개월 보정",
     icon: Cake,
+  },
+  {
+    href: "/calculators/medical-expense",
+    title: "실손의료비 계산기",
+    desc: "1~4세대·유병자 자동 계산",
+    icon: Stethoscope,
   },
 ];
 

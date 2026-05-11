@@ -9,6 +9,8 @@ import {
   ClipboardList,
   Users,
   ExternalLink,
+  HeartPulse,
+  Microscope,
 } from "lucide-react";
 
 type Tile = {
@@ -24,6 +26,8 @@ const tiles: Tile[] = [
   { href: "/claim-forms", label: "청구 양식 도우미", desc: "회사별 청구서 작성 지원", icon: FileText },
   { href: "/auto-insurance", label: "자동차 실무", desc: "견적·과실·할인할증 등", icon: Car },
   { href: "/calculators/insurance-age", label: "보험나이 계산기", desc: "만나이 + 6개월 보정", icon: Calculator },
+  { href: "/calculators/medical-expense", label: "실손의료비 계산기", desc: "1~4세대·유병자 자동 계산", icon: HeartPulse },
+  { href: "/tools/surgery-search", label: "수술명 검색", desc: "표준 수술분류표 1~5종", icon: Microscope },
   { href: "/education", label: "교육 자료", desc: "자격·보수교육 통합 안내", icon: GraduationCap },
   {
     href: "https://www.koicd.kr/",
